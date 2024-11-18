@@ -3,12 +3,7 @@ class Solution {
         int answer = 0;
 		
 		for(int i=0;i<a.length;i++) {
-			for(int j=0;j<b.length;j++) {
-				if(i == j) {
-					answer += a[i] * b[j];
-					break;
-				}
-			}
+			answer += a[i] * b[i];
 		}
 		
 		return answer;
