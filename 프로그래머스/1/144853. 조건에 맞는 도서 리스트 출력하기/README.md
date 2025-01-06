@@ -1,6 +1,6 @@
 # [level 1] 조건에 맞는 도서 리스트 출력하기 - 144853 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/144853) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/144853?language=mysql) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@ Empty
 
 ### 제출 일자
 
-2025년 01월 01일 19:08:25
+2025년 01월 06일 13:51:26
 
 ### 문제 설명
 
