@@ -4,7 +4,7 @@ SELECT
     ,CASE
         WHEN MAX(
                 CASE
-                    WHEN TO_DATE('20221016', 'YYYYMMDD') BETWEEN START_DATE AND END_DATE THEN 1
+                    WHEN '20221016' BETWEEN START_DATE AND END_DATE THEN 1
                     ELSE 0
                 END
             ) = 1 THEN '대여중'
