@@ -1,0 +1,24 @@
+-- 코드를 작성해주세요
+SELECT
+    (
+        SELECT
+            FI.ID
+        FROM FISH_INFO FI
+        WHERE FI.FISH_TYPE = MAX_FI.FISH_TYPE
+        AND FI.LENGTH = MAX_FI.LENGTH
+     ) AS ID
+    ,(
+        SELECT
+            FNI.FISH_NAME
+        FROM FISH_NAME_INFO FNI
+        WHERE FNI.FISH_TYPE = MAX_FI.FISH_TYPE
+     ) AS FISH_NAME
+     ,MAX_FI.LENGTH
+FROM (
+    SELECT
+        FI.FISH_TYPE AS FISH_TYPE
+        ,MAX(LENGTH) AS LENGTH
+    FROM FISH_INFO FI
+    GROUP BY FI.FISH_TYPE
+) MAX_FI
+ORDER BY ID
