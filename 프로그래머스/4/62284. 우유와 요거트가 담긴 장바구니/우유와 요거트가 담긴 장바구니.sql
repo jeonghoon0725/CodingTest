@@ -5,7 +5,7 @@ FROM (
         CART_ID
         ,NAME
     FROM CART_PRODUCTS
-    WHERE NAME IN ('Yogurt', 'Milk')
+    WHERE NAME REGEXP 'Milk|Yogurt'
 ) T
 GROUP BY CART_ID
 HAVING COUNT(CART_ID) > 1
